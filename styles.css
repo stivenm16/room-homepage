@@ -88,5 +88,7 @@ h1{
 }
 
 .change-image{
-    width: 30%;
+    position: absolute;
+    left: 55%;
+    bottom: 32%;
 }
