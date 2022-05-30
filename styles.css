@@ -33,7 +33,6 @@ header.Three {
     background-image: url('./images/desktop-image-hero-3.jpg');
 }
 
-
 .list {
     width: auto;
     cursor: pointer;
@@ -84,7 +83,7 @@ header.Three {
 .upper-content {
     padding: 5rem;
     margin-right: 0;
-
+    transition: opacity 1.5s;
     padding-bottom: 1.9rem;
 }
 h1{
