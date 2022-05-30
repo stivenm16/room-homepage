@@ -21,7 +21,18 @@ header {
     justify-content: flex-start;
     padding-left: 3rem;
     padding-top: 2.3rem;
+    transition: 1s;
+    
 }
+
+header.Two {
+    background-image: url('./images/desktop-image-hero-2.jpg');
+
+}
+header.Three {
+    background-image: url('./images/desktop-image-hero-3.jpg');
+}
+
 
 .list {
     width: auto;
