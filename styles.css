@@ -23,17 +23,38 @@ header {
     padding-top: 2.3rem;
 }
 
-ul {
+.list {
+    width: auto;
     cursor: pointer;
     display: flex;
     list-style: none;
-    margin-left: 2rem;
-    color: #fff;
+    justify-content: space-around;
+    margin-left: 1rem;
 }
 
-li {
-   margin-right: 1rem; 
-   margin-left: 1rem; 
+.list .list-link {
+    position: relative;
+    margin-right: 1rem; 
+    margin-left: 1rem; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.list .list-link::after {
+    content: '';
+    color: #fff;
+    position: absolute;
+    background: #fff;
+    bottom: -60%;
+    left: 60%;
+    width: 0%;
+    height: 2px;
+    transition: .4s ease-out;
+}
+
+.list .list-link:hover::after {
+    left: 0;
+    width: 100%;
 }
 
 .logo {
@@ -79,6 +100,10 @@ h1{
     padding-left: 1rem;
     color: hsl(0, 0%, 0%);
     font-size: 12px;
+    transition: .3s;
+}
+.shop-now:hover {
+    opacity: .5;
 }
 
 .change-image-btns{
@@ -89,6 +114,7 @@ h1{
     width: 62px;
     margin-right: -4px;
     cursor: pointer;
+    transition: .5s;
 }
 .change-image-btns:hover{
     opacity: .6;
@@ -113,14 +139,14 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 2.5rem;
-    width: 36.8%;
+    width: 38%;
 }
 .secondary-light-img{
     width: 36%;
 }
 
 .secondary-title {
-    margin-right: 12rem;
+    margin-right: 11rem;
     margin-bottom: 1rem;
     font-weight: 700;
     letter-spacing: 5px;
